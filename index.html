@@ -935,6 +935,35 @@
             }
         }
 
+        /* Mobile button enhancements */
+        @media (max-width: 768px) {
+            .btn {
+                min-height: 48px;
+                min-width: 48px;
+                -webkit-tap-highlight-color: rgba(0, 217, 192, 0.3);
+                touch-action: manipulation;
+                user-select: none;
+                -webkit-user-select: none;
+            }
+            .btn-primary {
+                padding: 14px 24px;
+            }
+            .mobile-menu a {
+                min-height: 48px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 12px 24px;
+                -webkit-tap-highlight-color: rgba(0, 217, 192, 0.3);
+                touch-action: manipulation;
+            }
+            .mobile-menu .btn {
+                margin-top: 16px;
+                width: 80%;
+                max-width: 280px;
+            }
+        }
+
         /* Video Section Styles */
         .video-section {
             padding: 100px 5%;
@@ -1023,7 +1052,7 @@
             <a href="#solution">How It Works</a>
             <a href="#founder">About</a>
             <a href="#pricing">Pricing</a>
-            <a href="https://discconsult.ai/book-meeting/" target="_blank" class="btn btn-primary">Book Discovery Call</a>
+            <a href="https://discconsult.ai/book-meeting/" target="_blank" rel="noopener" class="btn btn-primary">Book Discovery Call</a>
         </div>
         <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
             <span></span>
@@ -1039,7 +1068,7 @@
         <a href="#solution" onclick="toggleMobileMenu()">How It Works</a>
         <a href="#founder" onclick="toggleMobileMenu()">About</a>
         <a href="#pricing" onclick="toggleMobileMenu()">Pricing</a>
-        <a href="https://discconsult.ai/book-meeting/" target="_blank" class="btn btn-primary" onclick="toggleMobileMenu()">Book Discovery Call</a>
+        <a href="https://discconsult.ai/book-meeting/" target="_blank" rel="noopener" class="btn btn-primary">Book Discovery Call</a>
     </div>
 
     <!-- Hero Section -->
@@ -1051,7 +1080,7 @@
             <h1>Find <span>Millions</span> in Hidden Operational Waste</h1>
             <p>We help lean upstream oil & gas companies with $50M-$1B revenue who don't have an in-house data analytics team identify operational leakage in hours, not months.</p>
             <div class="hero-cta">
-                <a href="https://discconsult.ai/book-meeting/" target="_blank" class="btn btn-primary btn-large">Book a Discovery Call →</a>
+                <a href="https://discconsult.ai/book-meeting/" target="_blank" rel="noopener" class="btn btn-primary btn-large">Book a Discovery Call →</a>
                 <a href="#solution" class="btn btn-secondary btn-large">See How It Works</a>
             </div>
             <div class="hero-stats">
@@ -1294,7 +1323,7 @@
                         <span>Live executive briefing included</span>
                     </div>
                 </div>
-                <a href="https://discconsult.ai/book-meeting/" target="_blank" class="btn btn-primary btn-large" style="width: 100%; justify-content: center;">Book Discovery Call →</a>
+                <a href="https://discconsult.ai/book-meeting/" target="_blank" rel="noopener" class="btn btn-primary btn-large" style="width: 100%; justify-content: center;">Book Discovery Call →</a>
             </div>
         </div>
     </section>
@@ -1303,7 +1332,7 @@
     <section class="cta" id="cta">
         <h2>Ready to Find Your Hidden Millions?</h2>
         <p>Book a 30-minute discovery call. No pressure, no commitment — just an honest conversation about your operations.</p>
-        <a href="https://discconsult.ai/book-meeting/" target="_blank" class="btn btn-primary btn-large">Book Discovery Call →</a>
+        <a href="https://discconsult.ai/book-meeting/" target="_blank" rel="noopener" class="btn btn-primary btn-large">Book Discovery Call →</a>
         <p style="margin-top: 24px; font-size: 14px; color: rgba(255,255,255,0.5);">
             📧 noel@oilaudit.ai &nbsp;&nbsp;|&nbsp;&nbsp; 📍 Dallas, Texas
         </p>
